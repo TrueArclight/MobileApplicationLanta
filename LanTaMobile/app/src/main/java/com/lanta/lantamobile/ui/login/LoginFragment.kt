@@ -19,7 +19,6 @@ import com.lanta.lantamobile.repository.RegisterRepository
 
 class LoginFragment : Fragment() {
     private lateinit var loginViewModel: LoginViewModel
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -67,26 +66,22 @@ class LoginFragment : Fragment() {
 
         loginViewModel.navigatetoUserDetails.observe(viewLifecycleOwner, Observer { hasFinished->
             if (hasFinished == true){
-                Log.i("MYTAG","insidi observe")
+                Log.i("MYTAG","inside observe")
                 navigateUserDetails()
                 loginViewModel.doneNavigatingUserDetails()
             }
         })
-
-
         return binding.root
     }
-
-
     private fun displayUsersList() {
-        Log.i("MYTAG","insidisplayUsersList")
+        Log.i("MYTAG","insidesplayUsersList")
         val action = LoginFragmentDirections.actionLoginFragmentToHomeFragment()
         NavHostFragment.findNavController(this).navigate(action)
 
     }
 
     private fun navigateUserDetails() {
-        Log.i("MYTAG","insidisplayUsersList")
+        Log.i("MYTAG","insidesplayUsersList")
         val action = LoginFragmentDirections.actionLoginFragmentToUserDetailsFragment()
         NavHostFragment.findNavController(this).navigate(action)
     }
