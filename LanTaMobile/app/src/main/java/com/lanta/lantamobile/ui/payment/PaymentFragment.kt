@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.lanta.lantamobile.R
+import com.lanta.lantamobile.ui.map.MapViewModel
+import com.lanta.lantamobile.ui.register.RegisterViewModel
 
 class PaymentFragment : Fragment() {
 
@@ -14,19 +16,15 @@ class PaymentFragment : Fragment() {
         fun newInstance() = PaymentFragment()
     }
 
-    private lateinit var viewModel: PaymentViewModel
+    private lateinit var paymentViewModel: PaymentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        paymentViewModel = ViewModelProvider(this)[PaymentViewModel::class.java]
         return inflater.inflate(R.layout.payment_fragment, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(PaymentViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
 }
