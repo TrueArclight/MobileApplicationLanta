@@ -36,4 +36,6 @@
     <string name="help_text">Нужна помощь? Закажите обратный звонок, начните чат с оператором или найдите ответ на свой вопрос в FAQ.</string>
     <string name="agreement"><a href="https://lanta-net.ru/">Пользовательское соглашение</a></string>
     <string name="privacy"><a href="https://lanta-net.ru/">Политика конфиденциальности и обработки данных</a></string>
+
+    <string name="Payment">Оплатить</string>
 </resources>
