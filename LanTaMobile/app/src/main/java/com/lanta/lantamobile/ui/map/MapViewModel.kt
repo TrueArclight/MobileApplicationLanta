@@ -22,6 +22,7 @@ class MapViewModel(application: Application) : AndroidViewModel(application){
     private fun createLocationCallback(): LocationCallback {
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(p0: LocationResult) {
+                p0 ?: return
             }
         }
         return locationCallback
