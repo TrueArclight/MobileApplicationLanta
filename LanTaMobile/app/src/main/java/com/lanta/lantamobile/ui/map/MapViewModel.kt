@@ -76,7 +76,7 @@ class MapViewModel(application: Application) : AndroidViewModel(application){
     }
     private fun createLocationRequest(): LocationRequest {
         val locationRequest = LocationRequest.create()?.apply {
-            interval = 0
+            interval = 1
             fastestInterval = 0
             priority = LocationRequest.PRIORITY_HIGH_ACCURACY
         }
