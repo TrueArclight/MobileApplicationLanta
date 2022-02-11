@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">LanTaMobile</string>
+    <string name="photo">Photo</string>
+    <string name="develoops">DEVELOOPS</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="map_api">AIzaSyAufa9caaYrv2tsFHu1uXoM4A3KDw70Nvc</string>
+
+    <string name="account_text">Аккаунт</string>
+    <string name="name_text">Имя:</string>
+    <string name="Login_text">Вход</string>
+    <string name="UserNameTextView">Телефон:</string>
+    <string name="UsernameTextField">Введите телефон</string>
+    <string name="PasswordText">Пароль:</string>
+    <string name="PasswordTextFiels">Введите пароль</string>
+    <string name="Login_button">Вход</string>
+    <string name="signupText">Регистрация</string>
+    <string name="FirstNameText">Имя:</string>
+    <string name="FirstNameTextField">Введите имя</string>
+    <string name="SecondNameTextField">Введите фамилию</string>
+    <string name="LastNameText">Фамилия:</string>
+    <string name="submitButton">Зарегистрироваться</string>
+    <string name="List_of_Users_text">Информация о пользователе:</string>
+
+
+    <string name="help">Помощь</string>
+    <string name="help_text">Нужна помощь? Закажите обратный звонок, начните чат с оператором или найдите ответ на свой вопрос в FAQ.</string>
+    <string name="agreement"><a href="https://lanta-net.ru/">Пользовательское соглашение</a></string>
+    <string name="privacy"><a href="https://lanta-net.ru/">Политика конфиденциальности и обработки данных</a></string>
+</resources>

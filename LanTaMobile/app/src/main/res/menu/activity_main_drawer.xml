@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Карта" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/account_image"
+            android:title="Аккаунт" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/payment"
+            android:title="Оплата" />
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/map_history"
+            android:title="История поездок" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="Помощь" />
+    </group>
+</menu>
