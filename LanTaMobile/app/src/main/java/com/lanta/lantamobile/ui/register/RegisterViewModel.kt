@@ -14,33 +14,22 @@ import kotlinx.coroutines.launch
 
 class RegisterViewModel(private val repository: RegisterRepository, application: Application) :
     AndroidViewModel(application), Observable {
-
     init {
         Log.i("MYTAG", "init")
     }
-
     private var userdata: String? = null
-
     var userDetailsLiveData = MutableLiveData<Array<RegisterEntity>>()
-
     @Bindable
     val inputFirstName = MutableLiveData<String?>()
-
     @Bindable
     val inputLastName = MutableLiveData<String?>()
-
     @Bindable
-    val inputUsername = MutableLiveData<String?>()
-
+    val inputUsername = MutableLiveData<String?>() // Mutable LiveData Username
     @Bindable
     val inputPassword = MutableLiveData<String?>()
-
     private val viewModelJob = Job()
     private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)
-
-
     private val _navigateto = MutableLiveData<Boolean>()
-
     val navigateto: LiveData<Boolean>
         get() = _navigateto
 
